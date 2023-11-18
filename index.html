@@ -3,10 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contest_1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            text-decoration: none;
+            margin: 0%;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        
+        
+        #nav{
+            position: sticky;
+            top: 0px;
+            background-color: #FCAF02;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        logo a{
+            font-size: 30px;
+            font-weight: 700;
+            color:black
+        }
+        li{
+            display: inline-block;
+            margin-right: 15px;
+        }
+        li a{
+            font-weight: 600;
+            color: black;
+        }
+        button{
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(63, 143, 63);
+            
+        }
+        button a{
+            font-weight: 600;
+            color: white;
+        }
+        h1{
+            color: white;
+        }
+        body{
+            
+            background-color: black;
+        }
+        .head,h1{
+            
+            font-weight: 700;
+            margin-left: 50px;
+            margin-top: 50px;
+            color: #FFFFFF;
+            word-spacing: 7px;
+            
+            font-size: 60px;
+            
+        }
+        
+        .head,p{
+            font-size: 20px;
+            font-weight: 400;
+            
+            text-align: left;
+            margin-top: 20px;
+            margin-left: 58px;
+            color: white;
+        }
+        img{
+            float: right;
+            margin-left: 60px;
+            margin-right: 100px;
+            margin-top: 50px;
+            width: 300px;
+            height: 350px;
+        }
+        .btn{
+            border: none;
+            border-radius: 20px;
+            
+            height: 40px;
+            margin: 50px 50px 0px 50px;
+            width: 150px;
+            background-color:#FCAF02 ;
+        }
+        .btn>a{
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        #contact{
+            color: #FCAF02;
+            font-size: 20px;
+            font-weight: 700;
+            height: 40px;
+            font-size: 50px;
+            margin: 50px;
+        }
+        .form{
+            
+            margin: 50px 50px 0px 50px;
+        }
+        .form>input{
+            background-color:black;
+            border: 2px solid #FCAF02;
+            margin-top: 30px;
+            padding: 8px;
+            border-radius: 20px;
+            
+        }
+        .info{
+            width: 95%;
+        }
+        .cont1{
+            float: left;
+            width: 46%;
+        }
+        .cont2{
+            margin-right: 50px;
+            float: right;
+            width: 46%;
+        }
+
+        ::placeholder{
+            padding: 30px;
+            color: #FCAF02;
+        }
+        form input[type="text"] {
+            font-weight: 600;
+            color: #FCAF02;
+            
+        }
+        form input[type="email"] {
+            font-weight: 600;
+            color: #FCAF02;
+        }
+        form input[type="tel"] {
+            font-weight: 600;
+            color: #FCAF02;
+        }
+        form input:focus {
+            outline: none;
+            border: none; /* You can also set border to a specific value if needed */
+        }
+        .col{
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+            padding-left:1px;
+            padding-right: 1px;
+            margin-left: 45%;
+        }
+        #table{
+            margin:50px;
+            margin-top: 50px;
+            margin-left: 70px;
+            margin-bottom: 100px;
+        }
+        #table>table{
+            border: 1px solid #FCAF02;
+            border-collapse: collapse;
+            color: #FCAF02;
+            width: 98%;
+            font-family: Montserrat;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: left;
+            border-radius: 10px;
+        }
+        #table>table>tbody td{
+            border-right: 2px solid #FCAF02 ;
+            padding-left: 50px;
+            height: 85px;
+        }
+        #table>table th{
+            border-right: 2px solid #FCAF02 ;
+            border-bottom: 2px solid #FCAF02 ;
+            height: 40px;
+        }
+        #table>table>tfoot td{
+            background-color: #FCAF02;
+            color: #000000;
+            height: 78px;
+            padding-left: 50px;
+            border-right: 2px solid #000000 ;
+            font-weight: 400;
+        }
+        #th1{
+            width: 8%;
+            padding: 25px;
+            font-weight: 400;
+        }
+        #th2{
+            width: 33%;
+            padding-left: 33px;
+            font-weight: 400;
+        }
+        #th3{
+            width: 59%;
+            font-weight: 400;
+            padding-left: 47px;
+        }
+        #table>table>tfoot>tr>#foot1{
+            padding-left: 40px;;
+        }
+        #table>table>tfoot>tr>#foot2{
+            border-right: 2px solid #FCAF02;
+        }
+        #table>table>tbody>tr:nth-child(1)>td{
+            padding-top: 29px;
+        }
+        #table>table>tbody>tr:nth-child(6)>td{
+            padding-bottom: 38px;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>my project on next page</h1>
-    <h2>me</h2>
+    
+    <nav id="nav">
+        <logo>
+            <a href="#">Startup</a>
+        </logo>
+        <ul>
+            <li><a href="#" target="_blank">Home</a></li>
+            <li><a href="#" target="_blank">About Us</a></li>
+            <li><a href="contact" target="_blank">Contact Us</a></li>
+            <button><a href="#" target="_blank">Login</a></button>
+        </ul>
+    </nav>
+    <head class="head">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8XkdTKsAULSN5F6AYgc7xw9FJXZ6CQ7Kws-2vi8Rot7-WBf2-7ES3Ko45BW47gFQGM5k&usqp=CAU" alt="jeff_bezos">
+        <h1>Startup Landing Page </h1>
+        <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button class="btn" ><a href="#"  target="_blank" > Login</button></a>
+        
+
+    </head>
+    <h3 id="contact">Contact us</h3>
+    
+    <form action="" class="form">
+        
+        <input class="info" type="text" placeholder="Name">
+        <input class="info" type="email" name="" id="" placeholder="Email">
+       
+    <input class="cont1" type="tel" placeholder="Mobile Number">
+    <input class="cont2"type="text" placeholder="City">
+    <button class="btn col" type="submit" >Submit Form</button>
+    </form>
+    <section id="table">
+        <table>
+            <thead>
+                <tr><th id="th1">SNO.</th>
+                <th id="th2">Startup Name</th>
+            <th id="th3">Startup Description</th>
+        </tr>
+            </thead>
+            <tbody>
+                <tr><td>1.</td>
+                    <td>WowIndia</td>
+                <td>A startup with WOW Ideas.</td>
+            </tr>
+                <tr><td>2.</td>
+                    <td>Loreum Ipsum</td>
+                <td>Loreum Ipsum Text</td>
+            </tr>
+                <tr><td>3.</td>
+                    <td>Loreum Ipsum</td>
+                <td>Loreum Ipsum Text</td>
+            </tr>
+                <tr><td>4.</td>
+                    <td>Loreum Ipsum</td>
+                <td>Loreum Ipsum Text</td>
+            </tr>
+                <tr><td>5.</td>
+                    <td>Loreum Ipsum</td>
+                <td>Loreum Ipsum Text</td>
+            </tr>
+                <tr><td>6.</td>
+                    <td>Loreum Ipsum</td>
+                <td>Loreum Ipsum Text</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="foot1">00.</td>
+                    <td>Final Footer</td>
+                    <td id="foot2">Loreum Ipsum Text</td>
+                </tr>
+            </tfoot>
+        </table>
+    
 </body>
 </html>
